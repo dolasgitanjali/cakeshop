@@ -3,93 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Sweet Treats Bakery</title>
-    <link rel="stylesheet" href="./../css/style.css">
-    <link rel="stylesheet" href="./../css/product.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product Card- Kakiz Shop</title>
+    <link rel="Stylesheet" href="./../css/product.css">
+    <link rel="Stylesheet" href="./../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo"></div>
-            <h1 class="header-title">Sweet Treats Bakery</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="services.html"> Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="search-container">
-                <input type="text" placeholder="Search...">
-                <button><img src="./../icons/loupe.png" alt="Search Icon"></button>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section>
-            <h2>Our Products</h2>
-            <div class="product-container">
-                <div class="product-card">
-                    <img src="./../images/1.jpg" alt="Cake">
-                    <div class="card-content">
-                        <h3>Custom Cakes</h3>
-                        <p>Made to order for any occasion.</p>
-                        <a href="cake.html">
-                        <button onclick="showProductDetails('Custom Cakes', 'Made to order for any occasion.')">Learn More</button></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="./../images/pastry.jpg" alt="Pastry">
-                    <div class="card-content">
-                        <h3>Fresh Pastries</h3>
-                        <p>Baked fresh every morning.</p>
-                        <a href="pastry.html"><button onclick="showProductDetails('Fresh Pastries', 'Baked fresh every morning.')">Learn More</button></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="./../images/3.jpg" alt="Cookies">
-                    <div class="card-content">
-                        <h3>Delicious Cookies</h3>
-                        <p>Perfect for a sweet treat.</p>
-                        <a href="cookie.html"><button onclick="showProductDetails('Delicious Cookies', 'Perfect for a sweet treat.')">Learn More</button></a>
-                    </div>
+    <div class="card-container">
+        <img src="./../img/coconutcake.jpg " class="product-img" />
+        <div class="product-container">
+            <h1 class="product-title">Gold Watch</h1>
+            <p class="product-description">
+                Rose Dial Analogue Fashion Watch with Steel Strap For Women.
+            </p>
+            <div class="quantity-container">
+                <span class="product-price" id="product-price">₹ 550 </span>
+                <div class="quantity-btn-container">
+                    <img src="./../icons/minus.png" class="quantity-img" onclick="decrement()" />
+                    <span class="quantity-text" id="quantity-text">1</span>
+                    <img src="./../icons/plus.png" class="quantity-img" onclick="increment()" />
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <h3>Contact Us</h3>
-                <p>Email:hf123@gmail.com</p>
-                <p>Phone: +91 1234567890</p>
-                <p>Address: Local bakery XYZ street</p>
-            </div>
-            <div class="footer-content">
-                <h3>Quick Links</h3>
-                <ul class="list">
-                    <li><a href="./../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h3>Follow Us</h3>
-                <ul class="social-icons">
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
+            <p class="quantity-total" id="quantity-total">Quantity : 1</p>
         </div>
-        <div class="bottom-bar">
-            <p>&copy;  @ 2024 Sweet Treats Bakery. All Right Reserved</p>
+        <button type="button" class="btn-buy">Buy Now</button>
+    </div>
+    <div class="card-container">
+        <img src="./../img/blackforest.jpg" class="product-img" />
+        <div class="product-container">
+            <h1 class="product-title">Gold Watch</h1>
+            <p class="product-description">
+                Rose Dial Analogue Fashion Watch with Steel Strap For Women.
+            </p>
+            <div class="quantity-container">
+                <span class="product-price" id="product-price">₹ 550 </span>
+                <div class="quantity-btn-container">
+                    <img src="./../incons/minus.png" class="quantity-img" onclick="decrement()" />
+                    <span class="quantity-text" id="quantity-text">1</span>
+                    <img src="./../incons/plus.png" class="quantity-img" onclick="increment()" />
+                </div>
+            </div>
+            <p class="quantity-total" id="quantity-total">Quantity : 1</p>
         </div>
-    </footer>
+        <button type="button" class="btn-buy">Buy Now</button>
+    </div>
+    <script src="./../js/product.js"></script>
 </body>
 </html>

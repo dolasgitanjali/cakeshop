@@ -3,49 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Card- Kakiz Shop</title>
-    <link rel="Stylesheet" href="./../css/product.css">
-    <link rel="Stylesheet" href="./../css/style.css">
+    <title>Quantity Increment Decrement</title>
+    <link rel="stylesheet" href="./../css/product.css" />
 </head>
+
 <body>
-    <div class="card-container">
-        <img src="./../img/coconutcake.jpg " class="product-img" />
-        <div class="product-container">
-            <h1 class="product-title">Gold Watch</h1>
-            <p class="product-description">
-                Rose Dial Analogue Fashion Watch with Steel Strap For Women.
-            </p>
-            <div class="quantity-container">
-                <span class="product-price" id="product-price">₹ 550 </span>
-                <div class="quantity-btn-container">
-                    <img src="./../icons/minus.png" class="quantity-img" onclick="decrement()" />
-                    <span class="quantity-text" id="quantity-text">1</span>
-                    <img src="./../icons/plus.png" class="quantity-img" onclick="increment()" />
+<main>
+    <section>
+        <h1 class="title-name">Our Product</h1>
+
+        <div class="card-container">
+            <img src="./../img/blackforest.jpg" class="product-img" />
+            <div class="product-container">
+                <h1 class="product-title">BlackForest Cake</h1>
+                <p class="product-description">
+                Indulge in our rich and decadent chocolate cake, crafted with premium cocoa and topped with luscious chocolate ganache.
+
+                </p>
+                <div class="quantity-container">
+                    <span class="product-price" id="product-price-1">₹ 300 </span>
+                    <div class="quantity-btn-container">
+                        <img src="./../icons/minus.png" class="quantity-img" onclick="decrement(1)" />
+                        <span class="quantity-text" id="quantity-text-1">1</span>
+                        <img src="./../icons/plus.png" class="quantity-img" onclick="increment(1)" />
+                    </div>
                 </div>
+                <p class="quantity-total" id="quantity-total-1">Quantity : 1</p>
             </div>
-            <p class="quantity-total" id="quantity-total">Quantity : 1</p>
+            <button type="button" class="btn-buy">Buy Now</button>
         </div>
-        <button type="button" class="btn-buy">Buy Now</button>
-    </div>
-    <div class="card-container">
-        <img src="./../img/blackforest.jpg" class="product-img" />
-        <div class="product-container">
-            <h1 class="product-title">Gold Watch</h1>
-            <p class="product-description">
-                Rose Dial Analogue Fashion Watch with Steel Strap For Women.
-            </p>
-            <div class="quantity-container">
-                <span class="product-price" id="product-price">₹ 550 </span>
-                <div class="quantity-btn-container">
-                    <img src="./../incons/minus.png" class="quantity-img" onclick="decrement()" />
-                    <span class="quantity-text" id="quantity-text">1</span>
-                    <img src="./../incons/plus.png" class="quantity-img" onclick="increment()" />
+
+        <div class="card-container">
+            <img src="./../img/veganvanillacake.jpg" class="product-img" />
+            <div class="product-container">
+                <h1 class="product-title">VeganVanilla Cake</h1>
+                <p class="product-description">
+                    Delight in our classic vanilla cake, featuring a light and fluffy texture with a smooth vanilla buttercream frosting.
+                </p>
+                <div class="quantity-container">
+                    <span class="product-price" id="product-price-2">₹ 300 </span>
+                    <div class="quantity-btn-container">
+                        <img src="./../icons/minus.png" class="quantity-img" onclick="decrement(2)" />
+                        <span class="quantity-text" id="quantity-text-2">1</span>
+                        <img src="./../icons/plus.png" class="quantity-img" onclick="increment(2)" />
+                    </div>
                 </div>
+                <p class="quantity-total" id="quantity-total-2">Quantity : 1</p>
             </div>
-            <p class="quantity-total" id="quantity-total">Quantity : 1</p>
+            <button type="button" class="btn-buy">Buy Now</button>
         </div>
-        <button type="button" class="btn-buy">Buy Now</button>
-    </div>
-    <script src="./../js/product.js"></script>
+
+        <div class="card-container">
+            <img src="./../img/red velvet cake.jpg" class="product-img" />
+            <div class="product-container">
+                <h1 class="product-title">Red-Velvet Cake</h1>
+                <p class="product-description">
+                 Savor our elegant red velvet cake, layered with velvety cream cheese frosting and a hint of cocoa for a perfect balance of flavor.
+                </p>
+                <div class="quantity-container">
+                    <span class="product-price" id="product-price-3">₹ 300 </span>
+                    <div class="quantity-btn-container">
+                        <img src="./../icons/minus.png" class="quantity-img" onclick="decrement(3)" />
+                        <span class="quantity-text" id="quantity-text-3">1</span>
+                        <img src="./../icons/plus.png" class="quantity-img" onclick="increment(3)" />
+                    </div>
+                </div>
+                <p class="quantity-total" id="quantity-total-3">Quantity : 1</p>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+ 
+        <div class="card-container">
+            <img src="./../img/marblecake.jpg" class="product-img" />
+            <div class="product-container">
+                <h1 class="product-title">Marble Cake</h1>
+                <p class="product-description">
+                 Savor our elegant red velvet cake, layered with velvety cream cheese frosting and a hint of cocoa for a perfect balance of flavor.
+                </p>
+                <div class="quantity-container">
+                    <span class="product-price" id="product-price-3">₹ 300 </span>
+                    <div class="quantity-btn-container">
+                        <img src="./../icons/minus.png" class="quantity-img" onclick="decrement(3)" />
+                        <span class="quantity-text" id="quantity-text-3">1</span>
+                        <img src="./../icons/plus.png" class="quantity-img" onclick="increment(3)" />
+                    </div>
+                </div>
+                <p class="quantity-total" id="quantity-total-3">Quantity : 1</p>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+
+
+        <div class="card-container">
+            <img src="./../img/mangocake.jpg" class="product-img" />
+            <div class="product-container">
+                <h1 class="product-title">Mango Cake</h1>
+                <p class="product-description">
+                 Savor our elegant red velvet cake, layered with velvety cream cheese frosting and a hint of cocoa for a perfect balance of flavor.
+                </p>
+                <div class="quantity-container">
+                    <span class="product-price" id="product-price-3">₹ 300 </span>
+                    <div class="quantity-btn-container">
+                        <img src="./../icons/minus.png" class="quantity-img" onclick="decrement(3)" />
+                        <span class="quantity-text" id="quantity-text-3">1</span>
+                        <img src="./../icons/plus.png" class="quantity-img" onclick="increment(3)" />
+                    </div>
+                </div>
+                <p class="quantity-total" id="quantity-total-3">Quantity : 1</p>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+
+
+        <div class="card-container">
+            <img src="./../img/coconutcake.jpg" class="product-img" />
+            <div class="product-container">
+                <h1 class="product-title">Coconut Cake</h1>
+                <p class="product-description">
+                 Savor our elegant red velvet cake, layered with velvety cream cheese frosting and a hint of cocoa for a perfect balance of flavor.
+                </p>
+                <div class="quantity-container">
+                    <span class="product-price" id="product-price-3">₹ 300 </span>
+                    <div class="quantity-btn-container">
+                        <img src="./../icons/minus.png" class="quantity-img" onclick="decrement(3)" />
+                        <span class="quantity-text" id="quantity-text-3">1</span>
+                        <img src="./../icons/plus.png" class="quantity-img" onclick="increment(3)" />
+                    </div>
+                </div>
+                <p class="quantity-total" id="quantity-total-3">Quantity : 1</p>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+    </section>
+</main>
+<script src="./../js/product.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 # Delicious Cake Shop
 
 ![image](screenshot.png.png)
+![image](screenshot1.png)
 
 Cakes is a mobile first,clean and responsive template built for a Cake Shop.
 

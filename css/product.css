@@ -1,0 +1,192 @@
+body{
+    text-align: center;
+}
+
+.card-container {
+    display: inline-block;
+    background-color: #fff;
+    width: 270px;
+    border: none;
+    border-radius: 15px;
+    margin: 50px 30px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    vertical-align: top; /* Align the top of cards */
+    border-radius: 20px;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.product-container {
+    margin: 10px;
+}
+
+.product-title {
+    font-size: 25px;
+}
+
+.product-description {
+    font-size: 15px;
+    color: #0000008c;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quantity-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.quantity-text {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.quantity-total {
+    font-size: 18px;
+}
+
+.btn-buy {
+    background-image: linear-gradient(135deg, pink 10%, rgb(245, 200, 235) 100%);
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin: 10px auto;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn-buy:hover {
+    background-image: linear-gradient(135deg, rgb(245, 200, 235) 10%, pink 100%);
+    transform: scale(1.10);
+}
+.title-name{
+    font-size: 35px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .card-container {
+        width: 45%;
+        margin: 20px 10px;
+    }
+
+    .product-title {
+        font-size: 22px;
+    }
+
+    .product-price, .quantity-text {
+        font-size: 25px;
+    }
+
+    .quantity-img {
+        width: 30px;
+    }
+
+    .quantity-total {
+        font-size: 16px;
+    }
+
+    .btn-buy {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .product-img {
+        height: 150px;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-price, .quantity-text {
+        font-size: 22px;
+    }
+
+    .quantity-img {
+        width: 25px;
+    }
+
+    .quantity-total {
+        font-size: 14px;
+    }
+
+    .btn-buy {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .title-name {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .product-img {
+        height: 120px;
+    }
+
+    .product-title {
+        font-size: 18px;
+    }
+
+    .product-price, .quantity-text {
+        font-size: 20px;
+    }
+
+    .quantity-img {
+        width: 20px;
+    }
+
+    .quantity-total {
+        font-size: 12px;
+    }
+
+    .btn-buy {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .title-name {
+        font-size: 24px;
+    }
+}

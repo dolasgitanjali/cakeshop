@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delicious Cake Shop</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo"></div>
+            <h1 class="header-title">Delicious Cake Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./../pages/about.html">About Us</a></li>
+                    <li><a href="./../pages/product.html">Products</a></li>
+                    <li><a href="./../pages/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button><img src="./../icons/loupe.png" alt="Search Icon"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+            <section>
+                <h2>Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to give feedback, we're here to help.</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> contact@deliciouscakeshop.com</p>
+                        <p><strong>Address:</strong> 123 Cake St, Sweet City, SC 12345</p>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form" onsubmit="return validateForm()">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Contact Us content goes here -->
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:Bob@gmail.com</p>
+                <p>Phone: +91 8267567890</p>
+                <p>Address: Aarohi Cake Shop,Rahuri-413705</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./../pages/about.html">About</a></li>
+                    <li><a href="./../pages/product.html">Products</a></li>
+                    <li><a href="./../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy;  @ Delicious Cake Shop. All Right Reserved</p>
+        </div>
+
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>

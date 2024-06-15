@@ -2,6 +2,7 @@
 
 ![image](screenshot.png.png)
 ![image](screenshot1.png)
+![image](screenshot2.png.png)
 
 Cakes is a mobile first,clean and responsive template built for a Cake Shop.
 

@@ -68,7 +68,7 @@ body{
 
 .btn-buy {
     background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.973) 10%, rgb(245, 200, 235) 100%);
-    color:#fff;
+    color:black;
     font-size: 20px;
     display: block;
     margin: 10px auto;
